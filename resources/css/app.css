@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.custom-select {
+    appearance: none;
+    border: 1px solid #d1d5db;
+    padding-right: 2.5rem;
+    background-image: url("data:image/svg+xml,%3Csvg width="15" height="9" viewBox="00159" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M141.5L7.839147.18695C7.647617.363757.352397.363757.160867.18695L11.5" stroke="%23323232" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round"/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1.25rem 1.25rem;
+}
+
+.custom-select-container {
+    position: relative;
+
+    align-items: center;
+}
+.custom-select-container .fa-chevron-down {
+    position: absolute;
+    right: 1rem;
+    pointer-events: none;
+}
+
+.custom-icon {
+    font-size: 30px;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input{
+    outline: none;
+}
+
+select::after {
+    content: "\25BC";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+select option {
+    padding: 10px;
+    background-color: white;
+}
+
+select:focus option:checked,
+select option:hover {
+    background-color: #d3d3d3; 
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+.search-container input[type="text"] {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding-left: 10px;
+    width: 100%;
+    font-size: 16px;
+    color: #333;
+}
+
+.search-container input[type="text"]::placeholder {
+    color: #888;
+}
+
+.search-container .search-icon {
+    font-size: 18px;
+    color: #ffcc00;
+}
+
+.select-small {
+    appearance: none; 
+    -webkit-appearance: none; 
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1px 10px;
+    font-size: 14px;
+    width: 60px;
+    box-sizing: border-box;
+    color: #333;
+    position: relative;
+}
+
+
+.btn-secondary{
+    background: transparent;
+    border: 1px solid #ffcc00;
+}
+
+.btn-primary{
+    background: #ffcc00;
+    border: 1px solid #ffcc00;
+}
+
+.select-small::after {
+    content: '\25BC';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; 
+    font-size: 10px;
+    color: #333;
+}
+
+.select-container-small {
+    position: relative;
+    display: inline-block;
+}
+
+.select-small option {
+    background-color: white;
+    color: #333;
+}
+
+.file-upload-container {
+    margin-bottom: 20px;
+}
+.uploaded-file {
+    display: flex;
+    align-items: center;
+    background-color: #d4edda;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    width: 150px;
+}
+.delete-btn {
+    position: absolute;
+    right: 45px; 
+    margin-left: 10px;
+    cursor: pointer;
+    color: red;
+}
+.file-input {
+    display: none;
+}
+.choose-file-label {
+    display: inline-block;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffd700;
+    text-decoration-line: underline;
+    width: 150px;
+    font-size: 12px;
+}
+.choose-file-label:hover {
+    background-color: #e0e0e0;
+}
+.choose-file-label::before {
+    position: absolute;
+    right: 240px;
+    
+    display: inline-block;
+}
+.hidden {
+    display: none;
+}
+
+.gray {
+    appearance: none;
+    background-color: #f0f0f0;
+    border: 1px solid #d1d5db;
+}
